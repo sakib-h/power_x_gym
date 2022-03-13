@@ -1,16 +1,27 @@
 .navigation {
+	width: 90%;
+	margin: auto;
 	margin-bottom: 80px;
 }
 .navigation a {
 	text-decoration: none;
 	color: #ffffff;
-	font-size: 1.2rem;
+	font-size: 1rem;
+	font-weight: 400;
 	padding: 10px 15px;
+	border-radius: 5px;
+	transition: 0.3s;
 }
 .navigation a:hover {
-	text-decoration: none;
 	color: #171426;
-	font-size: 1.2rem;
 	background-color: #fcd842;
-	border-radius: 5px;
+}
+
+.navigation .navbar-toggler {
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+}
+.navigation .navbar-toggler:focus {
+	box-shadow: none;
 }

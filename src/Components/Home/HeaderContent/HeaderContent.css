@@ -1,3 +1,26 @@
 .headerContent {
 	color: #ffffff;
+	width: 90%;
+	margin: auto;
+}
+.headerContent h1 {
+	font-size: 4.5rem;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	margin-bottom: 80px;
+}
+.headerContent p {
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-bottom: 80px;
+}
+.headerContent button {
+	font-size: 1.5rem;
+	font-weight: 700;
+	background-color: #fcd842;
+	padding: 5px 30px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin-bottom: 100px;
 }

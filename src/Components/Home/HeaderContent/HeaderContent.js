@@ -1,9 +1,10 @@
 import React from "react";
 import "./HeaderContent.css";
+import "./Responsive.css";
 
 const HeaderContent = () => {
 	return (
-		<div className="headerContent container">
+		<div className="headerContent">
 			<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pe-5">
 				<h1>
 					THE BEST FITNESS <br /> STUDIO IN TOWN{" "}
