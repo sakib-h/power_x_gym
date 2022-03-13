@@ -1,20 +1,24 @@
-.header {
-	height: 600px;
+.header .bgContainer {
 	background-image: url("../../../Resources/Images/headerBg.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: -7%;
+	top: 0;
 	left: 0;
 	right: 0;
+	z-index: -1;
 }
-.header::before {
+.header .bgContainer::before {
 	content: "";
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(23, 20, 38, 0.5);
+	background-color: rgba(23, 20, 38, 0.65);
+	z-index: 0;
+}
+.header .headerContent {
+	z-index: 1;
 }

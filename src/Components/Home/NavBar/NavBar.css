@@ -1,4 +1,16 @@
+.navigation {
+	margin-bottom: 80px;
+}
 .navigation a {
 	text-decoration: none;
 	color: #ffffff;
+	font-size: 1.2rem;
+	padding: 10px 15px;
+}
+.navigation a:hover {
+	text-decoration: none;
+	color: #171426;
+	font-size: 1.2rem;
+	background-color: #fcd842;
+	border-radius: 5px;
 }
