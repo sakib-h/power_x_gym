@@ -10,6 +10,7 @@
 	font-weight: 400;
 	padding: 10px 15px;
 	border-radius: 5px;
+	cursor: pointer;
 	transition: 0.3s;
 }
 .navigation a:hover {

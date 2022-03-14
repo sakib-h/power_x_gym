@@ -6,8 +6,11 @@ import "./Header.css";
 const Header = () => {
 	return (
 		<header className="header">
-			<NavBar className="navBar" />
-			<HeaderContent className="headerContent" />
+			<div className="headerBg">
+				<NavBar className="navBar" />
+				<HeaderContent className="headerContent" />
+			</div>
+			<div className="overlay"></div>
 		</header>
 	);
 };
