@@ -1,15 +1,15 @@
-.header .bgContainer {
-	background-image: url("../../../Resources/Images/headerBg.jpg");
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: -1;
+header {
+	position: relative;
+	margin-bottom: 80px;
 }
-.header .bgContainer::before {
+.header .navBar {
+	position: relative;
+}
+.header .headerContent {
+	position: relative;
+}
+
+.header::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -19,6 +19,17 @@
 	background-color: rgba(23, 20, 38, 0.65);
 	z-index: 0;
 }
-.header .headerContent {
+
+.header {
+	content: "";
+	height: max-content;
+	background-image: url("../../../Resources/Images/headerBg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
+	top: -5%;
+	left: 0;
+	right: 0;
+	z-index: -1;
 }

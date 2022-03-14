@@ -14,7 +14,7 @@ const NavBar = () => {
 			<Navbar collapseOnSelect expand="lg md" sticky="top">
 				<div
 					href="home"
-					className="col-5 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 logo"
+					className="col-5 col-sm-4 col-md-4 col-lg-2 col-xl-3 col-xxl-3 logo"
 					onClick={navigationHandler}
 				>
 					{" "}

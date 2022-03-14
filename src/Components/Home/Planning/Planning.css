@@ -1,0 +1,101 @@
+.planning {
+	width: 90%;
+	margin: auto;
+}
+
+.planning .cardContainer {
+	padding: 10px 15px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.planning .cardContainer .cardContent {
+	position: relative;
+	z-index: 2;
+}
+.planning .cardContainer:hover {
+	transform: scale(102%);
+}
+
+.planning .cardContainer img {
+	padding-top: 80px;
+}
+
+.planning .cardContainer h2 {
+	color: #ffffff;
+	padding: 20px;
+}
+
+.planning .cardContainer p {
+	color: #ffffff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.planning .cardContainer:hover h2 {
+	color: #fcd842;
+}
+.planning .cardContainer:hover p {
+	color: #fcd842;
+}
+
+.planning .progressBg {
+	position: relative;
+	background-image: url(../../../Resources/Images/progressBg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	z-index: -1;
+}
+.planning .progressBg:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(23, 20, 38, 0.5);
+	border-radius: 10px;
+	z-index: 0;
+}
+
+.planning .workoutBg {
+	position: relative;
+	background-image: url(../../../Resources/Images/workoutBg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.planning .workoutBg:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(23, 20, 38, 0.5);
+	border-radius: 10px;
+	z-index: 0;
+}
+.planning .nutritionBg {
+	position: relative;
+	background-image: url(../../../Resources/Images/nutritionBg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.planning .nutritionBg:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(23, 20, 38, 0.5);
+	border-radius: 10px;
+	z-index: 0;
+}

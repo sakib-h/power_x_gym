@@ -14,6 +14,20 @@
 }
 @media only screen and (max-width: 768) {
 	.headerContent h1 {
+		font-size: 4rem;
+		margin: 40px 0;
+	}
+	.headerContent p {
+		font-size: 1.2rem;
+		margin-bottom: 40px;
+	}
+	.headerContent button {
+		font-size: 1rem;
+		font-weight: 600;
+	}
+}
+@media only screen and (max-width: 992) {
+	.headerContent h1 {
 		font-size: 4.5rem;
 		margin: 40px 0;
 	}
