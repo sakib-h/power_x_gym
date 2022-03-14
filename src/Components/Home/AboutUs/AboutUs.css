@@ -1,0 +1,30 @@
+.aboutUs {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 80px;
+}
+.aboutUs h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-family: "Oswald", sans-serif;
+}
+.aboutUs h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	color: #fcd842;
+	margin-bottom: 20px;
+}
+.aboutUs h3 {
+	font-size: 3rem;
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 20px;
+}
+.aboutUs p {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 2rem;
+	margin-bottom: 20px;
+}
