@@ -1,6 +1,7 @@
 import React from "react";
 import AboutUs from "../AboutUs/AboutUs";
 import ChooseUs from "../ChooseUs/ChooseUs";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Planning from "../Planning/Planning";
 import TrainingPrograms from "../TrainingPrograms/TrainingPrograms";
@@ -14,6 +15,7 @@ const HomePage = () => {
 			<AboutUs />
 			<TrainingPrograms />
 			<ChooseUs />
+			<Footer />
 		</div>
 	);
 };
