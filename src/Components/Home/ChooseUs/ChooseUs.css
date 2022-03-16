@@ -32,8 +32,7 @@
 }
 .chooseUs .bgContainer:hover {
 	transform: scale(102%);
-	border: 1px solid #fcd842;
-	outline: none;
+	outline: 1px solid #fcd842;
 }
 
 .chooseUs img {

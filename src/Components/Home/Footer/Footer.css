@@ -1,7 +1,20 @@
 footer {
 	background-color: #171426;
+	padding: 10px 20px;
 }
 footer .footerContainer {
 	width: 90%;
 	margin: auto;
+	color: #ffffff;
+}
+footer .header {
+	padding-bottom: 10px;
+}
+footer h6 {
+	font-size: 1.2rem;
+}
+footer ion-icon {
+	font-size: 1.5rem;
+	padding-right: 10px;
+	cursor: pointer;
 }
