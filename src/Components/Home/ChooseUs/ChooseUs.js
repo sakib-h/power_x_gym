@@ -7,7 +7,7 @@ import "./Responsive.css";
 
 const ChooseUs = () => {
 	return (
-		<section className="chooseUs">
+		<section className="chooseUs" data-aos="zoom-in">
 			<h2>
 				<span>WHY</span> CHOOSE US
 			</h2>

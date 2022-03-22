@@ -3,7 +3,7 @@ import "./TrainingPrograms.css";
 import "./Responsive.css";
 const TrainingPrograms = () => {
 	return (
-		<section className="trainingProgram">
+		<section className="trainingProgram" data-aos="fade-down">
 			<h2>
 				TRAINING <span>PROGRAMS</span>{" "}
 			</h2>

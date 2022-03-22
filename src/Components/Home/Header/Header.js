@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
 	return (
-		<header className="header">
+		<header className="header" data-aos="zoom-in">
 			<div className="headerBg">
 				<NavBar className="navBar" />
 				<HeaderContent className="headerContent" />

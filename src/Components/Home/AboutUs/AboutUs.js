@@ -4,7 +4,7 @@ import "./AboutUs.css";
 import "./responsive.css";
 const AboutUs = () => {
 	return (
-		<section className="aboutUs">
+		<section className="aboutUs" data-aos="zoom-in-right">
 			<div className="row align-items-center justify-content-between">
 				<div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
 					<img src={image} alt="" className="img-fluid" />

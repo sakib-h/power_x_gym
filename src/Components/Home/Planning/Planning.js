@@ -6,7 +6,7 @@ import "./Planning.css";
 
 const Planning = () => {
 	return (
-		<section className="planning  ">
+		<section className="planning" data-aos="zoom-in-left">
 			<div className="card-group row">
 				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 cardContainer">
 					<div className="bg-Container  progressBg">
