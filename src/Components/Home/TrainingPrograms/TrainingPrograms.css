@@ -31,6 +31,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.trainingProgram .card{
+	border: none;
+}
+
 .trainingProgram .content {
 	padding-top: 60%;
 	padding-bottom: 10%;
@@ -46,7 +50,7 @@
 .trainingProgram h3 {
 	font-family: "Oswald", sans-serif;
 	font-weight: 700;
-	padding: 0 15px;
+	padding-right: 15px;
 }
 .trainingProgram ion-icon {
 	font-size: 1.5rem;

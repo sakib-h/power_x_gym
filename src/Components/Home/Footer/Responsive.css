@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1200px) {
+	footer h6 {
+		font-size: 1rem;
+	}
+	footer ion-icon {
+		font-size: 1.2rem;
+		padding-right: 10px;
+		cursor: pointer;
+	}
+
+	footer p {
+		font-size: 0.8rem;
+	}
+}
+@media only screen and (max-width: 992px) {
+	footer h6 {
+		font-size: 0.8rem;
+	}
+	footer ion-icon {
+		font-size: 0.8rem;
+		padding-right: 10px;
+		cursor: pointer;
+	}
+}
+@media only screen and (max-width: 768px) {
+	footer img {
+		width: 50%;
+	}
+
+	footer h6 {
+		font-size: 0.8rem;
+	}
+	footer ion-icon {
+		font-size: 0.8rem;
+		padding-right: 10px;
+		cursor: pointer;
+	}
+}
+@media only screen and (max-width: 576px) {
+	footer {
+		text-align: center;
+	}
+
+	footer img {
+		width: 50%;
+	}
+
+	footer h6 {
+		font-size: 1.2rem;
+	}
+	footer ion-icon {
+		font-size: 1.5rem;
+		padding: 5px;
+		cursor: pointer;
+	}
+
+	footer .text {
+		display: inline-block;
+	}
+	footer p {
+		font-size: 0.8rem;
+	}
+}

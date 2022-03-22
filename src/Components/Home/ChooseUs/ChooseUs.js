@@ -3,6 +3,7 @@ import "./ChooseUs.css";
 import muscle from "../../../Resources/Images/Group 87.png";
 import cardio from "../../../Resources/Images/Group 88.png";
 import gift from "../../../Resources/Images/gift-2.png";
+import "./Responsive.css";
 
 const ChooseUs = () => {
 	return (
@@ -10,8 +11,8 @@ const ChooseUs = () => {
 			<h2>
 				<span>WHY</span> CHOOSE US
 			</h2>
-			<div className=" d-flex justify-content-center">
-				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-6 p-3">
+			<div className=" row justify-content-center">
+				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 					<div className="bgContainer">
 						<img src={muscle} alt="" />
 						<h4>FREE FITNESS TRAINING</h4>
@@ -24,7 +25,7 @@ const ChooseUs = () => {
 						</p>
 					</div>
 				</div>
-				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-6 p-3">
+				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 					<div className="bgContainer">
 						<img src={cardio} alt="" />
 						<h4>TONS OF CARDIO & STRENGTH</h4>
@@ -37,7 +38,7 @@ const ChooseUs = () => {
 						</p>
 					</div>
 				</div>
-				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-6 p-3">
+				<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 					<div className="bgContainer">
 						<img src={gift} alt="" />
 						<h4>NO COMMITMENT MEMBERSHIP</h4>

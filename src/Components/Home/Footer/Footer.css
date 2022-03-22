@@ -1,6 +1,5 @@
 footer {
 	background-color: #171426;
-	padding: 10px 20px;
 }
 footer .footerContainer {
 	width: 90%;
@@ -10,6 +9,11 @@ footer .footerContainer {
 footer .header {
 	padding-bottom: 10px;
 }
+
+footer p {
+	font-size: 0.9rem;
+}
+
 footer h6 {
 	font-size: 1.2rem;
 }

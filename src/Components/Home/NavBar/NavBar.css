@@ -3,6 +3,9 @@
 	margin: auto;
 	margin-bottom: 80px;
 }
+.navigation .logo {
+	cursor: pointer;
+}
 .navigation a {
 	text-decoration: none;
 	color: #ffffff;
