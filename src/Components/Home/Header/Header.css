@@ -12,7 +12,6 @@ header .headerContent {
 }
 
 .header .overlay {
-	content: "";
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -23,7 +22,6 @@ header .headerContent {
 }
 
 header .headerBg {
-	content: "";
 	background-image: url("../../../Resources/Images/headerBg.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
