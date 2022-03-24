@@ -1,0 +1,84 @@
+.classInfo {
+	width: 90%;
+	margin: 0 auto !important;
+	margin-bottom: 80px;
+}
+
+.classInfo .cardBg {
+	position: relative;
+}
+
+.classInfo .training1Bg {
+	height: 390.7px;
+	width: 100%;
+	background-image: url(../../../Resources/Images/training1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+.classInfo .training2Bg {
+	height: 390.7px;
+	width: 100%;
+	background-image: url(../../../Resources/Images/training2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+.classInfo .training3Bg {
+	height: 390.7px;
+	width: 100%;
+	background-image: url(../../../Resources/Images/training3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+.classInfo .training4Bg {
+	height: 390.7px;
+	width: 100%;
+	background-image: url(../../../Resources/Images/training4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+.classInfo .training5Bg {
+	height: 390.7px;
+	width: 100%;
+	background-image: url(../../../Resources/Images/training5.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+.classInfo .training6Bg {
+	height: 390.7px;
+	width: 390.7px;
+	background-image: url(../../../Resources/Images/training6.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 80px;
+}
+
+.classInfo .textBg {
+	width: 90%;
+	height: 20%;
+	position: absolute;
+	top: 90%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fcd842;
+	color: #171426;
+}
+* .classInfo .textBg h5 {
+	font-family: "Oswald", sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 0;
+}

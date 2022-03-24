@@ -9,8 +9,8 @@ import OurClasses from "./Components/Classes/OurClasses/OurClasses";
 function App() {
 	useEffect(() => {
 		AOS.init({
-			offset: 200,
-			duration: 1000,
+			offset: 150,
+			duration: 500,
 		});
 		AOS.refresh();
 	}, []);
