@@ -74,6 +74,7 @@
 	margin-right: auto;
 	background-color: #fcd842;
 	color: #171426;
+	cursor: pointer;
 }
 * .classInfo .textBg h5 {
 	font-family: "Oswald", sans-serif;

@@ -4,13 +4,14 @@ import ClassesInfo from "../ClassesInfo/ClassesInfo";
 import Header from "../Header/Header";
 import "./OurClasses.css";
 import "./Responsive.css";
+import Slide from "react-reveal/Fade";
 const OurClasses = () => {
 	return (
-		<div className="ourClasses">
+		<Slide right duration={500} className="ourClasses">
 			<Header />
 			<ClassesInfo />
 			<Footer />
-		</div>
+		</Slide>
 	);
 };
 
