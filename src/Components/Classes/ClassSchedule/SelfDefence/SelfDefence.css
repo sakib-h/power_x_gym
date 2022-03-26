@@ -39,3 +39,82 @@
 	text-align: center;
 	z-index: 3;
 }
+.selfDefence section {
+	position: relative;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 80px;
+}
+
+.selfDefence img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.selfDefence h4 {
+	margin: 0;
+	padding: 0;
+	padding: 10px 15px;
+	color: #171426;
+	font-weight: 700;
+}
+
+.selfDefence ion-icon {
+	color: #fcd842;
+	font-size: 1.8rem;
+}
+.selfDefence h1 {
+	font-size: 4.5rem;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.selfDefence span {
+	font-size: 4.5rem;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	margin-bottom: 40px;
+	color: #fcd842;
+}
+
+.selfDefence .bgContainer {
+	background-color: #ffffff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+.selfDefence h5 {
+	margin: 0;
+	padding: 0;
+	padding: 10px 10px;
+	font-size: 1.5rem;
+	color: #171426;
+	font-weight: 700;
+}
+.selfDefence small {
+	display: inline-block;
+	font-size: 1.2rem;
+	color: #fcd842;
+	font-weight: 700;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+.selfDefence p {
+	font-size: 1rem;
+	line-height: 30px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.selfDefence button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #171426;
+	background-color: #fcd842;
+	padding: 5px 30px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
