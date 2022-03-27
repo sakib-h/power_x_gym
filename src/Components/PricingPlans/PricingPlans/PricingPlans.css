@@ -1,0 +1,120 @@
+section {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.pricingPlans .contentContainer {
+	position: relative;
+	transition: 0.4s;
+}
+.pricingPlans .contentContainer:hover {
+	transform: scale(103%);
+}
+
+.pricingPlans .bg1 {
+	position: relative;
+	background-image: url(../../../Resources/Images/progressBg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	box-sizing: border-box;
+}
+.pricingPlans .bg2 {
+	position: relative;
+	background-image: url(../../../Resources/Images/workoutBg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	box-sizing: border-box;
+}
+.pricingPlans .bg3 {
+	position: relative;
+	background-image: url(../../../Resources/Images/nutritionBg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	box-sizing: border-box;
+}
+
+.pricingPlans .colorOverlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(23, 20, 38, 0.7);
+	z-index: 0;
+}
+
+.pricingPlans .content {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+.pricingPlans h6 {
+	padding-top: 100px;
+	font-family: "Oswald", sans-serif;
+	color: #fcd842;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: center;
+}
+.pricingPlans h2 {
+	padding-bottom: 40px;
+	font-family: "Oswald", sans-serif;
+	color: #ffffff;
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+.pricingPlans h1 {
+	padding-bottom: 40px;
+	font-family: "Oswald", sans-serif;
+	color: #fcd842;
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+.pricingPlans .features {
+	margin-left: 32%;
+	margin-right: 32%;
+	padding: 40px 0;
+	margin-bottom: 40px;
+}
+
+.pricingPlans .feature {
+	padding: 5px 0;
+}
+.pricingPlans p {
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald", sans-serif;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.pricingPlans ion-icon {
+	color: #ffffff;
+	font-size: 1.7rem;
+	padding-right: 10px;
+	font-weight: 400;
+}
+
+.pricingPlans button {
+	font-size: 1.5rem;
+	font-weight: 700;
+	background-color: #fcd842;
+	padding: 5px 30px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin-bottom: 100px;
+	text-align: center;
+	margin-left: 32%;
+	margin-right: 32%;
+	cursor: pointer;
+}

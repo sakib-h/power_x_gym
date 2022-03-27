@@ -11,6 +11,7 @@ import PsychoTraining from "./Components/Classes/ClassSchedule/PsychoTraining/Ps
 import SelfDefence from "./Components/Classes/ClassSchedule/SelfDefence/SelfDefence";
 import CardioTraining from "./Components/Classes/ClassSchedule/CardioTraining/CardioTraining";
 import StrengthTraining from "./Components/Classes/ClassSchedule/StrengthTraining/StrengthTraining";
+import PricingPlans from "./Components/PricingPlans/PricingPlans/PricingPlans";
 function App() {
 	useEffect(() => {
 		AOS.init({
@@ -25,6 +26,7 @@ function App() {
 				<Route path="/" element={<HomePage />} />
 				<Route path="home" element={<HomePage />} />
 				<Route path="ourClasses" element={<OurClasses />} />
+				<Route path="pricing" element={<PricingPlans />} />
 				<Route path="psychoTraining" element={<PsychoTraining />} />
 				<Route path="selfDefence" element={<SelfDefence />} />
 				<Route path="advanceGym" element={<AdvanceGym />} />
