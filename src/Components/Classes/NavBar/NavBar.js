@@ -41,7 +41,12 @@ const NavBar = () => {
 						<Link to="/pricing" className=" me-2">
 							Pricing
 						</Link>
-						<Link to="/contactUs ">Contact Us</Link>
+						<Link to="/contactUs " className=" me-2">
+							Contact Us
+						</Link>
+						<Link to="/login " className=" ">
+							Login
+						</Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

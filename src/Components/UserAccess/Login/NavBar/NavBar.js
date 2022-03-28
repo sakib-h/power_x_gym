@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../../../Resources/Images/logo.png";
+import Logo from "../../../../Resources/Images/logo.png";
 import "./NavBar.css";
 import "./Responsive.css";
 
@@ -38,13 +38,13 @@ const NavBar = () => {
 						<Link to="/blog" className=" me-2">
 							Blog
 						</Link>
-						<Link to="/pricing" className=" me-2 active">
+						<Link to="/pricing" className=" me-2">
 							Pricing
 						</Link>
 						<Link to="/contactUs " className=" me-2">
 							Contact Us
 						</Link>
-						<Link to="/login " className="">
+						<Link to="/login " className=" active">
 							Login
 						</Link>
 					</Nav>

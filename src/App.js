@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,12 @@ import SelfDefence from "./Components/Classes/ClassSchedule/SelfDefence/SelfDefe
 import CardioTraining from "./Components/Classes/ClassSchedule/CardioTraining/CardioTraining";
 import StrengthTraining from "./Components/Classes/ClassSchedule/StrengthTraining/StrengthTraining";
 import PricingPlans from "./Components/PricingPlans/PricingPlans/PricingPlans";
+import Login from "./Components/UserAccess/Login/LoginPage/Login";
+import SignUp from "./Components/UserAccess/SignUp/SignupPage/SignUp";
+export const userContext = createContext();
+
 function App() {
+	const [user, setUser] = useState();
 	useEffect(() => {
 		AOS.init({
 			offset: 150,
@@ -21,7 +26,7 @@ function App() {
 		AOS.refresh();
 	}, []);
 	return (
-		<div className="App">
+		<userContext.Provider className="App" value={[user, setUser]}>
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="home" element={<HomePage />} />
@@ -32,9 +37,11 @@ function App() {
 				<Route path="advanceGym" element={<AdvanceGym />} />
 				<Route path="cardioTraining" element={<CardioTraining />} />
 				<Route path="strengthTraining" element={<StrengthTraining />} />
+				<Route path="login" element={<Login />} />
+				<Route path="signup" element={<SignUp />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
-		</div>
+		</userContext.Provider>
 	);
 }
 

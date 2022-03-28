@@ -55,7 +55,7 @@ section {
 	width: 100%;
 	z-index: 2;
 }
-.pricingPlans h6 {
+.pricingPlans .text h6 {
 	padding-top: 100px;
 	font-family: "Oswald", sans-serif;
 	color: #fcd842;
@@ -63,7 +63,7 @@ section {
 	font-weight: 700;
 	text-align: center;
 }
-.pricingPlans h2 {
+.pricingPlans .text h2 {
 	padding-bottom: 40px;
 	font-family: "Oswald", sans-serif;
 	color: #ffffff;
@@ -71,7 +71,7 @@ section {
 	font-weight: 700;
 	text-align: center;
 }
-.pricingPlans h1 {
+.pricingPlans .text h1 {
 	padding-bottom: 40px;
 	font-family: "Oswald", sans-serif;
 	color: #fcd842;
@@ -89,7 +89,7 @@ section {
 .pricingPlans .feature {
 	padding: 5px 0;
 }
-.pricingPlans p {
+.pricingPlans .features p {
 	margin: 0;
 	padding: 0;
 	font-family: "Oswald", sans-serif;
@@ -97,7 +97,7 @@ section {
 	font-size: 1.2rem;
 	font-weight: 400;
 }
-.pricingPlans ion-icon {
+.pricingPlans .features ion-icon {
 	color: #ffffff;
 	font-size: 1.7rem;
 	padding-right: 10px;
