@@ -5,28 +5,19 @@ import { userContext } from "../../../App";
 import Logo from "../../../Resources/Images/logo.png";
 import "./NavBar.css";
 import "./Responsive.css";
-import { getAuth, signOut } from "firebase/auth";
-import { initializeApp } from "firebase/app";
-import FirebaseConfig from "../../UserAccess/Firebase/FirebaseConfig";
+import { useAuth } from "../../UserAccess/Firebase/AuthContext";
 
 const NavBar = () => {
+	const { signOutUser, currentUser } = useAuth();
 	const [user, setUser] = useContext(userContext);
 	const navigate = useNavigate();
 	const navigationHandler = () => {
 		navigate("/home");
 	};
-	const app = initializeApp(FirebaseConfig);
-	const auth = getAuth(app);
 	const signOutHandler = async () => {
 		try {
-			signOut(auth)
-				.then(() => {
-					// Sign-out successful.
-				})
-				.catch((err) => console.log(err));
-		} catch (error) {
-			// An error happened.
-		}
+			await signOutUser();
+		} catch (error) {}
 	};
 
 	return (
@@ -63,12 +54,15 @@ const NavBar = () => {
 						<Link to="/contactUs " className=" me-2">
 							Contact Us
 						</Link>
-						<Link to="/login " className="">
-							Login
-						</Link>
-						<button className="logOut" onClick={signOutHandler}>
-							Logout
-						</button>
+						{currentUser ? (
+							<button className="logOut" onClick={signOutHandler}>
+								Logout
+							</button>
+						) : (
+							<Link to="/login " className="">
+								Login
+							</Link>
+						)}
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

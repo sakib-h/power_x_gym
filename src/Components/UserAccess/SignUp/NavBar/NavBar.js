@@ -2,13 +2,20 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../../../Resources/Images/logo.png";
+import { useAuth } from "../../Firebase/AuthContext";
 import "./NavBar.css";
 import "./Responsive.css";
 
 const NavBar = () => {
+	const { signOutUser, currentUser } = useAuth();
 	const navigate = useNavigate();
 	const navigationHandler = () => {
 		navigate("/home");
+	};
+	const signOutHandler = async () => {
+		try {
+			await signOutUser();
+		} catch (error) {}
 	};
 	return (
 		<nav className="navigation">
@@ -44,9 +51,15 @@ const NavBar = () => {
 						<Link to="/contactUs " className=" me-2">
 							Contact Us
 						</Link>
-						<Link to="/login " className=" active">
-							Login
-						</Link>
+						{currentUser ? (
+							<button className="logOut" onClick={signOutHandler}>
+								Logout
+							</button>
+						) : (
+							<Link to="/login " className="">
+								Login
+							</Link>
+						)}
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

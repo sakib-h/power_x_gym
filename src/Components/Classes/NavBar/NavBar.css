@@ -6,6 +6,22 @@
 .navigation .logo {
 	cursor: pointer;
 }
+.navigation button {
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.navigation button:hover {
+	color: #171426;
+	background-color: #fcd842;
+}
+
 .navigation a {
 	text-decoration: none;
 	color: #ffffff;

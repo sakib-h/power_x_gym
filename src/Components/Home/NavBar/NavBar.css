@@ -16,9 +16,10 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation .logOut {
-	text-decoration: none;
+.navigation button {
 	color: #ffffff;
+	background-color: transparent;
+	border: none;
 	font-size: 1rem;
 	font-weight: 400;
 	padding: 10px 15px;
@@ -26,7 +27,7 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation .logOut:hover {
+.navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }

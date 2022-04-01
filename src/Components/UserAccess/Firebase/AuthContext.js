@@ -7,6 +7,7 @@ import {
 	signInWithPopup,
 	FacebookAuthProvider,
 	signInWithEmailAndPassword,
+	signOut,
 } from "firebase/auth";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { initializeApp } from "firebase/app";
@@ -48,6 +49,11 @@ export function AuthProvider({ children }) {
 	const login = (email, password) => {
 		return signInWithEmailAndPassword(auth, email, password);
 	};
+	// --> Sign in  with Email & Pass  <--
+
+	const signOutUser = () => {
+		return signOut(auth);
+	};
 
 	useEffect(() => {
 		const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -57,7 +63,14 @@ export function AuthProvider({ children }) {
 		return unsubscribe;
 	}, []);
 
-	const value = { signup, currentUser, googleLogIn, facebookLogIn, login };
+	const value = {
+		signup,
+		currentUser,
+		googleLogIn,
+		facebookLogIn,
+		login,
+		signOutUser,
+	};
 	return (
 		<AuthContext.Provider value={value}>
 			{!loading && children}
