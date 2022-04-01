@@ -1,26 +1,24 @@
 .signUp section {
 	width: 90%;
 	margin: auto;
-}
-.signUp .formContainer {
-	margin: auto;
-	width: 40%;
-	border-radius: 5px;
-	color: #fff;
-	padding: 40px 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	margin-bottom: 80px;
 }
+.signUp .card-body {
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .signUp input {
-	width: 100%;
 	margin-bottom: 10px;
 	padding: 5px;
 	border: none;
 	border-bottom: 1px solid rgba(23, 20, 38, 0.3);
+	transition: 0.4s;
 }
 
 .signUp input:focus {
-	outline: none;
+	box-shadow: none;
+	padding: 2px;
 	border-bottom: 1px solid rgba(23, 20, 38, 0.3);
 }
 
@@ -29,21 +27,10 @@
 }
 
 .signUp .submit {
-	width: 55%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: auto;
-	font-size: 1.3rem;
-	font-weight: 700;
-	color: #171426;
-	background-color: #fcd842;
-	padding: 5px 30px;
-	border-radius: 5px;
+	color: #171426 !important;
+	background-color: #fcd842 !important;
 	border: none;
 	outline: none;
-	margin-top: 5px;
-	margin-bottom: 15px;
 }
 
 .signUp h4 {
@@ -54,18 +41,7 @@
 	font-weight: 700;
 	margin-bottom: 15px;
 }
-.signUp .forgottenPass {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	color: #171426;
-	text-align: right;
-	font-size: 1rem;
-	font-weight: 400;
-	margin-bottom: 15px;
-	text-decoration: underline;
-	cursor: pointer;
-}
+
 .signUp .signUp {
 	display: flex;
 	flex-direction: column;
@@ -79,20 +55,13 @@
 	cursor: pointer;
 }
 
-.signUp h6 {
-	color: #171426;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 400;
-	margin-bottom: 15px;
-}
 .signUp span {
 	text-decoration: underline;
 	cursor: pointer;
 }
 
 .signUp .buttonBg {
-	width: 55%;
+	width: 40%;
 	margin: auto;
 	color: #fff;
 	border-radius: 5px;

@@ -3,6 +3,7 @@ import NavBar from "../../NavBar/NavBar";
 import "./PsychoTraining.css";
 import image from "../../../../Resources/Images/training1.png";
 import Footer from "../../../Shared/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 const PsychoTraining = () => {
 	const classSchedule = [
 		{
@@ -30,6 +31,10 @@ const PsychoTraining = () => {
 			time: "7:00 PM - 8:00 PM",
 		},
 	];
+	const navigate = useNavigate();
+	const navigationHandler = () => {
+		navigate("/membership");
+	};
 
 	return (
 		<div className="psychoTraining">
@@ -109,7 +114,7 @@ const PsychoTraining = () => {
 							</div>
 						))}
 					</div>
-					<button>JOIN US</button>
+					<button onClick={navigationHandler}>JOIN US</button>
 				</div>
 			</section>
 			<Footer />

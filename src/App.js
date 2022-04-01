@@ -14,10 +14,14 @@ import StrengthTraining from "./Components/Classes/ClassSchedule/StrengthTrainin
 import PricingPlans from "./Components/PricingPlans/PricingPlans/PricingPlans";
 import Login from "./Components/UserAccess/Login/LoginPage/Login";
 import SignUp from "./Components/UserAccess/SignUp/SignupPage/SignUp";
+import PrivateOutlet from "./Components/UserAccess/PrivateOutlet/PrivateOutlet";
+import Membership from "./Components/Membership/MembershipPage/Membership";
+import { AuthProvider } from "./Components/UserAccess/Firebase/AuthContext";
 export const userContext = createContext();
 
 function App() {
-	const [user, setUser] = useState();
+	const [user, setUser] = useState({});
+
 	useEffect(() => {
 		AOS.init({
 			offset: 150,
@@ -26,22 +30,30 @@ function App() {
 		AOS.refresh();
 	}, []);
 	return (
-		<userContext.Provider className="App" value={[user, setUser]}>
-			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="home" element={<HomePage />} />
-				<Route path="ourClasses" element={<OurClasses />} />
-				<Route path="pricing" element={<PricingPlans />} />
-				<Route path="psychoTraining" element={<PsychoTraining />} />
-				<Route path="selfDefence" element={<SelfDefence />} />
-				<Route path="advanceGym" element={<AdvanceGym />} />
-				<Route path="cardioTraining" element={<CardioTraining />} />
-				<Route path="strengthTraining" element={<StrengthTraining />} />
-				<Route path="login" element={<Login />} />
-				<Route path="signup" element={<SignUp />} />
-				<Route path="*" element={<Error />} />
-			</Routes>
-		</userContext.Provider>
+		<AuthProvider>
+			<userContext.Provider className="App" value={[user, setUser]}>
+				<Routes>
+					<Route path="/" element={<HomePage />} />
+					<Route path="home" element={<HomePage />} />
+					<Route path="ourClasses" element={<OurClasses />} />
+					<Route path="pricing" element={<PricingPlans />} />
+					<Route path="psychoTraining" element={<PsychoTraining />} />
+					<Route path="selfDefence" element={<SelfDefence />} />
+					<Route path="advanceGym" element={<AdvanceGym />} />
+					<Route path="cardioTraining" element={<CardioTraining />} />
+					<Route
+						path="strengthTraining"
+						element={<StrengthTraining />}
+					/>
+					<Route path="login" element={<Login />} />
+					<Route path="signup" element={<SignUp />} />
+					<Route path="" element={<PrivateOutlet />}>
+						<Route path="membership" element={<Membership />} />
+					</Route>
+					<Route path="*" element={<Error />} />
+				</Routes>
+			</userContext.Provider>
+		</AuthProvider>
 	);
 }
 
