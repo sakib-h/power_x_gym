@@ -1,0 +1,47 @@
+.chooseUs {
+	width: 90%;
+	margin: auto;
+	color: #171426;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.chooseUs h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	color: #171426;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.chooseUs span {
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	color: #fcd842;
+	margin-bottom: 80px;
+}
+
+.chooseUs .bgContainer {
+	height: 400px;
+	padding: 20px 15px;
+	background-color: #ffffff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+	border: none;
+	outline: none;
+}
+.chooseUs .bgContainer:hover {
+	transform: scale(102%);
+	outline: 1px solid #fcd842;
+}
+
+.chooseUs img {
+	padding: 25px 0;
+}
+
+.chooseUs h4 {
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+	padding: 15px 0;
+}

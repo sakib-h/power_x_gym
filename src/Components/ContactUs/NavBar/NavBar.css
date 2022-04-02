@@ -1,12 +1,12 @@
-.membership .navigation {
+.contactUs .navigation {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 80px;
 }
-.membership .navigation .logo {
+.contactUs .navigation .logo {
 	cursor: pointer;
 }
-.membership .navigation button {
+.contactUs .navigation button {
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
@@ -17,11 +17,11 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.membership .navigation button:hover {
+.contactUs .navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.membership .navigation a {
+.contactUs .navigation a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1rem;
@@ -31,20 +31,20 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.membership .navigation a:hover {
+.contactUs .navigation a:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.membership .navigation .active {
+.contactUs .navigation .active {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.membership .navigation .navbar-toggler {
+.contactUs .navigation .navbar-toggler {
 	background-color: #ffffff;
 	border: none;
 	outline: none;
 }
-.membership .navigation .navbar-toggler:focus {
+.contactUs .navigation .navbar-toggler:focus {
 	box-shadow: none;
 }

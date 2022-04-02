@@ -8,6 +8,7 @@ section {
 	position: relative;
 	transition: 0.4s;
 }
+
 .pricingPlans .contentContainer:hover {
 	transform: scale(103%);
 }
@@ -104,7 +105,7 @@ section {
 	font-weight: 400;
 }
 
-.pricingPlans button {
+.pricingPlans .button {
 	font-size: 1.5rem;
 	font-weight: 700;
 	background-color: #fcd842;

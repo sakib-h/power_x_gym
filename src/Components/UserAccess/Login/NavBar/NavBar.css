@@ -1,12 +1,12 @@
-.navigation {
+.login .navigation {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 80px;
 }
-.navigation .logo {
+.login .navigation .logo {
 	cursor: pointer;
 }
-.navigation button {
+.login .navigation button {
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
@@ -17,11 +17,11 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation button:hover {
+.login .navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.navigation a {
+.login .navigation a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1rem;
@@ -31,20 +31,20 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation a:hover {
+.login .navigation a:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.navigation .active {
+.login .navigation .active {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.navigation .navbar-toggler {
+.login .navigation .navbar-toggler {
 	background-color: #ffffff;
 	border: none;
 	outline: none;
 }
-.navigation .navbar-toggler:focus {
+.login .navigation .navbar-toggler:focus {
 	box-shadow: none;
 }

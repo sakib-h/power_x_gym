@@ -1,12 +1,12 @@
-.navigation {
+.signUp .navigation {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 80px;
 }
-.navigation .logo {
+.signUp .navigation .logo {
 	cursor: pointer;
 }
-.navigation button {
+.signUp .navigation button {
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
@@ -17,11 +17,11 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation button:hover {
+.signUp .navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.navigation a {
+.signUp .navigation a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1rem;
@@ -31,20 +31,20 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation a:hover {
+.signUp .navigation a:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.navigation .active {
+.signUp .navigation .active {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.navigation .navbar-toggler {
+.signUp .navigation .navbar-toggler {
 	background-color: #ffffff;
 	border: none;
 	outline: none;
 }
-.navigation .navbar-toggler:focus {
+.signUp .navigation .navbar-toggler:focus {
 	box-shadow: none;
 }

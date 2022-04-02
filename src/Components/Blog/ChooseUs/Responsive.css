@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1200px) {
+	.chooseUs .bgContainer {
+		height: 450px;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.chooseUs .bgContainer {
+		height: 500px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.chooseUs .bgContainer {
+		height: 325px;
+	}
+	.chooseUs img {
+		padding: 15px 0;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.chooseUs .bgContainer {
+		height: 350px;
+	}
+	.chooseUs img {
+		padding: 10px 0;
+	}
+} ;

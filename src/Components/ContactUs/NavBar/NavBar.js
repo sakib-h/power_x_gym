@@ -1,8 +1,8 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../../../../Resources/Images/logo.png";
-import { useAuth } from "../../Firebase/AuthContext";
+import Logo from "../../../Resources/Images/logo.png";
+import { useAuth } from "../../UserAccess/Firebase/AuthContext";
 import "./NavBar.css";
 import "./Responsive.css";
 
@@ -18,7 +18,7 @@ const NavBar = () => {
 		} catch (error) {}
 	};
 	return (
-		<div className="login">
+		<div className="contactUs">
 			<nav className="navigation">
 				<Navbar collapseOnSelect expand="lg md" sticky="top">
 					<div
@@ -49,7 +49,7 @@ const NavBar = () => {
 							<Link to="/pricing" className=" me-2">
 								Pricing
 							</Link>
-							<Link to="/contactUs " className=" me-2">
+							<Link to="/contactUs " className="active me-2">
 								Contact Us
 							</Link>
 							{currentUser ? (

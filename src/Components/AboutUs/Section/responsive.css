@@ -1,0 +1,75 @@
+@media only screen and (max-width: 768px) {
+	.aboutUs {
+		text-align: center;
+	}
+
+	.aboutUs img {
+		padding-bottom: 30px;
+	}
+
+	.aboutUs h1 {
+		font-size: 3.8rem;
+		font-weight: 700;
+		margin-bottom: 20px;
+		color: #171426;
+		font-family: "Oswald", sans-serif;
+	}
+	.aboutUs h2 {
+		font-size: 2.8rem;
+		font-weight: 600;
+		font-family: "Oswald", sans-serif;
+		color: #fcd842;
+		margin-bottom: 20px;
+	}
+	.aboutUs h3 {
+		font-size: 2.3rem;
+		font-weight: 700;
+		font-family: "Oswald", sans-serif;
+		color: #171426;
+		margin-bottom: 20px;
+	}
+	.aboutUs p {
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 2rem;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.aboutUs {
+		text-align: center;
+	}
+
+	.aboutUs img {
+		padding-bottom: 30px;
+	}
+
+	.aboutUs h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 20px;
+		color: #171426;
+		font-family: "Oswald", sans-serif;
+	}
+	.aboutUs h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		font-family: "Oswald", sans-serif;
+		color: #fcd842;
+		margin-bottom: 20px;
+	}
+	.aboutUs h3 {
+		font-size: 2rem;
+		font-weight: 700;
+		font-family: "Oswald", sans-serif;
+		color: #171426;
+		margin-bottom: 20px;
+	}
+	.aboutUs p {
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 2rem;
+		margin-bottom: 20px;
+	}
+}

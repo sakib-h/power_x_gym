@@ -1,0 +1,57 @@
+.trainingProgram {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 80px;
+}
+.trainingProgram h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	color: #171426;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.trainingProgram span {
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	color: #fcd842;
+	margin-bottom: 80px;
+}
+.trainingProgram .bgContainerYoga {
+	background-image: url(../../../Resources/Images/yogaTraining.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.trainingProgram .bgContainerCardio {
+	background-image: url(../../../Resources/Images/cardioTraining.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.trainingProgram .card{
+	border: none;
+}
+
+.trainingProgram .content {
+	padding-top: 60%;
+	padding-bottom: 10%;
+}
+
+.trainingProgram .contentBg {
+	width: fit-content;
+	padding: 10px 20px;
+	background-color: #fcd842;
+	cursor: pointer;
+}
+
+.trainingProgram h3 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	padding-right: 15px;
+}
+.trainingProgram ion-icon {
+	font-size: 1.5rem;
+}

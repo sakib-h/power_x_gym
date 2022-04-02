@@ -1,12 +1,12 @@
-.navigation {
+.classes .navigation {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 80px;
 }
-.navigation .logo {
+.classes .navigation .logo {
 	cursor: pointer;
 }
-.navigation button {
+.classes .navigation button {
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
@@ -17,12 +17,12 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation button:hover {
+.classes .navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.navigation a {
+.classes .navigation a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1rem;
@@ -32,20 +32,20 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.navigation a:hover {
+.classes .navigation a:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.navigation .active {
+.classes .navigation .active {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.navigation .navbar-toggler {
+.classes .navigation .navbar-toggler {
 	background-color: #ffffff;
 	border: none;
 	outline: none;
 }
-.navigation .navbar-toggler:focus {
+.classes .navigation .navbar-toggler:focus {
 	box-shadow: none;
 }

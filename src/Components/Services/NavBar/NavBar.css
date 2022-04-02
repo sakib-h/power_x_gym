@@ -1,12 +1,12 @@
-.membership .navigation {
+.services .navigation {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 80px;
 }
-.membership .navigation .logo {
+.services .navigation .logo {
 	cursor: pointer;
 }
-.membership .navigation button {
+.services .navigation button {
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
@@ -17,11 +17,11 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.membership .navigation button:hover {
+.services .navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.membership .navigation a {
+.services .navigation a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1rem;
@@ -31,20 +31,20 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.membership .navigation a:hover {
+.services .navigation a:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.membership .navigation .active {
+.services .navigation .active {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.membership .navigation .navbar-toggler {
+.services .navigation .navbar-toggler {
 	background-color: #ffffff;
 	border: none;
 	outline: none;
 }
-.membership .navigation .navbar-toggler:focus {
+.services .navigation .navbar-toggler:focus {
 	box-shadow: none;
 }

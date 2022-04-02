@@ -17,6 +17,10 @@ import SignUp from "./Components/UserAccess/SignUp/SignupPage/SignUp";
 import PrivateOutlet from "./Components/UserAccess/PrivateOutlet/PrivateOutlet";
 import Membership from "./Components/Membership/MembershipPage/Membership";
 import { AuthProvider } from "./Components/UserAccess/Firebase/AuthContext";
+import Services from "./Components/Services/Services/Services";
+import AboutUs from "./Components/AboutUs/AboutUs/AboutUs";
+import Blog from "./Components/Blog/Blog/Blog";
+import ContactUs from "./Components/ContactUs/ContactUs/ContactUs";
 export const userContext = createContext();
 
 function App() {
@@ -35,8 +39,12 @@ function App() {
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="home" element={<HomePage />} />
+					<Route path="services" element={<Services />} />
 					<Route path="ourClasses" element={<OurClasses />} />
+					<Route path="aboutUs" element={<AboutUs />} />
+					<Route path="blog" element={<Blog />} />
 					<Route path="pricing" element={<PricingPlans />} />
+					<Route path="contactUs" element={<ContactUs />} />
 					<Route path="psychoTraining" element={<PsychoTraining />} />
 					<Route path="selfDefence" element={<SelfDefence />} />
 					<Route path="advanceGym" element={<AdvanceGym />} />
