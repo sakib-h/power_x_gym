@@ -39,8 +39,8 @@ const PricingPlans = () => {
 										<p>Happy Customers</p>
 									</div>
 								</div>
-								<div className="button">
-									<button>PURCHASE</button>
+								<div>
+									<button className="button">PURCHASE</button>
 								</div>
 							</div>
 							<div className="colorOverlay"></div>
@@ -79,8 +79,8 @@ const PricingPlans = () => {
 										<p>Happy Customers</p>
 									</div>
 								</div>
-								<div className="button">
-									<button>PURCHASE</button>
+								<div>
+									<button className="button">PURCHASE</button>
 								</div>
 							</div>
 							<div className="colorOverlay"></div>
@@ -118,8 +118,8 @@ const PricingPlans = () => {
 										<p>Happy Customers</p>
 									</div>
 								</div>
-								<div className="button">
-									<button>PURCHASE</button>
+								<div>
+									<button className="button">PURCHASE</button>
 								</div>
 							</div>
 							<div className="colorOverlay"></div>
