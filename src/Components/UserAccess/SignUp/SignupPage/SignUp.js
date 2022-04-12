@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./SignUp.css";
 import Footer from "../../../Shared/Footer/Footer";
 import Header from "../Header/Header";
@@ -6,8 +6,7 @@ import { Form, Button, Card, Container, Alert } from "react-bootstrap";
 import { useAuth } from "../../Firebase/AuthContext";
 import { updateProfile } from "firebase/auth";
 import { auth } from "../../Firebase/AuthContext";
-import { userContext } from "../../../../App";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
 	// --> Form ref defined <--
@@ -20,9 +19,6 @@ const Signup = () => {
 	// --> Importing from context  <--
 	const { signup, currentUser } = useAuth();
 	console.log(currentUser);
-
-	// --> Context Declaration <--
-	const [user, setUser] = useContext(userContext);
 
 	// --> State Declaration <--
 	const [loading, setLoading] = useState(false);

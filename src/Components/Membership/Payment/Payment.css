@@ -1,8 +1,8 @@
-.membership section {
+.payment section {
 	width: 90%;
 	margin: auto;
 }
-.membership .progressContainer {
+.payment .progressContainer {
 	position: relative;
 	width: 70%;
 	height: 40px;
@@ -10,25 +10,25 @@
 	margin-bottom: 40px;
 }
 
-.membership .progress {
+.payment .progress {
 	height: 5px;
 	background-color: #afafaf;
 	z-index: 0;
 	overflow: visible;
 }
-.membership .bg-warning {
+.payment .bg-warning {
 	background-color: #fcd842 !important;
 }
-.membership .firstText {
+.payment .firstText {
 	transform: translateX(-28%);
 }
-.membership .secondText {
+.payment .secondText {
 	transform: translateX(18%);
 }
-.membership .thirdText {
+.payment .thirdText {
 	transform: translateX(38%);
 }
-.membership .circle1 {
+.payment .circle1 {
 	transform: translateY(-55%);
 	color: #ffffff;
 	background-color: #afafaf;
@@ -40,11 +40,11 @@
 	font-weight: 700;
 	border-radius: 50%;
 }
-.membership .active {
-	color: #171426;
+.payment .active {
+	color: #171426 !important;
 	background-color: #fcd842 !important;
 }
-.membership .circle2 {
+.payment .circle2 {
 	transform: translateY(-55%);
 	color: #ffffff;
 	background-color: #afafaf;
@@ -56,7 +56,7 @@
 	font-weight: 700;
 	border-radius: 50%;
 }
-.membership .circle3 {
+.payment .circle3 {
 	transform: translateY(-55%);
 	color: #ffffff;
 	background-color: #afafaf;
@@ -71,11 +71,11 @@
 
 /* Form */
 
-.membership .margin {
+.payment .margin {
 	margin: 15px 0;
 }
 
-.membership .button {
+.payment .button {
 	width: fit-content;
 	color: #171426;
 	background-color: #fcd842;
@@ -87,12 +87,12 @@
 	text-align: center;
 	cursor: pointer;
 }
-.membership .button:disabled {
+.payment .button:disabled {
 	color: #171426;
 	background-color: rgb(252, 216, 66);
 }
 
-.membership .button:hover {
+.payment .button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }

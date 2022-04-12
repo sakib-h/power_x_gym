@@ -32,6 +32,9 @@
 	border: none;
 	outline: none;
 }
+.login .submit:disabled {
+	cursor: not-allowed;
+}
 
 .login h4 {
 	color: #171426;

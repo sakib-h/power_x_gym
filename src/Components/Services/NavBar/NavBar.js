@@ -40,6 +40,9 @@ const NavBar = () => {
 							<Link to="/ourClasses" className=" me-2">
 								Our Classes
 							</Link>
+							<Link to="/membership" className=" me-2">
+								Membership
+							</Link>
 							<Link to="/aboutUs" className=" me-2 ">
 								About Us
 							</Link>

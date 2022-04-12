@@ -32,6 +32,9 @@
 	border: none;
 	outline: none;
 }
+.signUp .submit:disabled {
+	cursor: not-allowed;
+}
 
 .signUp h4 {
 	color: #171426;
@@ -45,7 +48,7 @@
 .signUp .signUp {
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: flex-end;
 	color: #171426;
 	text-align: left;
 	font-size: 1rem;
