@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../../Shared/Footer/Footer";
-
 import "./PricingPlans.css";
+import { useNavigate } from "react-router-dom";
 const PricingPlans = () => {
+	const [price, setPrice] = useState({
+		plan: "",
+		price: "",
+	});
+
+	const navigate = useNavigate();
+
+	const clickHandler = (event) => {
+		if (event.target.id === "advance") {
+			const cart = { ...price };
+			cart.plan = "ADVANCE PLAN";
+			cart.price = 140;
+			setPrice(cart);
+			localStorage.setItem("cartInfo", JSON.stringify(cart));
+		}
+		if (event.target.id === "basic") {
+			const cart = { ...price };
+			cart.plan = "BASIC PLAN";
+			cart.price = 120;
+			setPrice(cart);
+			localStorage.setItem("cartInfo", JSON.stringify(cart));
+		}
+		if (event.target.id === "beginner") {
+			const cart = { ...price };
+			cart.plan = "BEGINNERS PLAN";
+			cart.price = 90;
+			setPrice(cart);
+			localStorage.setItem("cartInfo", JSON.stringify(cart));
+		}
+
+		navigate("/membership");
+	};
+
 	return (
 		<div className="pricingPlans">
 			<Header />
@@ -40,7 +73,13 @@ const PricingPlans = () => {
 									</div>
 								</div>
 								<div>
-									<button className="button">PURCHASE</button>
+									<button
+										className="button"
+										id="advance"
+										onClick={clickHandler}
+									>
+										PURCHASE
+									</button>
 								</div>
 							</div>
 							<div className="colorOverlay"></div>
@@ -80,7 +119,13 @@ const PricingPlans = () => {
 									</div>
 								</div>
 								<div>
-									<button className="button">PURCHASE</button>
+									<button
+										className="button"
+										id="basic"
+										onClick={clickHandler}
+									>
+										PURCHASE
+									</button>
 								</div>
 							</div>
 							<div className="colorOverlay"></div>
@@ -119,7 +164,13 @@ const PricingPlans = () => {
 									</div>
 								</div>
 								<div>
-									<button className="button">PURCHASE</button>
+									<button
+										className="button"
+										id="beginner"
+										onClick={clickHandler}
+									>
+										PURCHASE
+									</button>
 								</div>
 							</div>
 							<div className="colorOverlay"></div>

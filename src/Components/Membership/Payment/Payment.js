@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Button, Form, ProgressBar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../Shared/Footer/Footer";
@@ -9,7 +9,10 @@ import "./Payment.css";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
+import { userContext } from "../../../App";
 const Payment = () => {
+	const [user, setUser] = useContext(userContext);
+
 	const stripePromise = loadStripe(
 		"pk_test_51KN98OL7tQ6jANmIfhWNbalEAq8ZLqfIo9uwm4SpAWl1Qq0jb4kPXPHlpQySdF8Hk8lAQh7Se1A2bFg6HmngrGGl00vZK1vTpb"
 	);
