@@ -7,6 +7,7 @@ const PricingPlans = () => {
 	const [price, setPrice] = useState({
 		plan: "",
 		price: "",
+		quantity: "",
 	});
 
 	const navigate = useNavigate();
@@ -16,7 +17,18 @@ const PricingPlans = () => {
 			const cart = { ...price };
 			cart.plan = "ADVANCE PLAN";
 			cart.price = 140;
+			cart.quantity = 1;
 			setPrice(cart);
+			fetch(`http://localhost:5000/addToCart`, {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(cart),
+			})
+				.then((res) => res.json())
+				.then(({ url }) => {
+					window.location = url;
+				})
+				.catch((err) => console.log(err));
 			localStorage.setItem("cartInfo", JSON.stringify(cart));
 		}
 		if (event.target.id === "basic") {
