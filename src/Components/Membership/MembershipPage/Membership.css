@@ -23,7 +23,7 @@
 	transform: translateX(-28%);
 }
 .membership .secondText {
-	transform: translateX(18%);
+	transform: translateX(22%);
 }
 .membership .thirdText {
 	transform: translateX(38%);
@@ -41,7 +41,7 @@
 	border-radius: 50%;
 }
 .membership .active {
-	color: #171426;
+	color: #171426 !important;
 	background-color: #fcd842 !important;
 }
 .membership .circle2 {

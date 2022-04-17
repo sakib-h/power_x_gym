@@ -3,6 +3,7 @@ import Footer from "../../../Shared/Footer/Footer";
 import NavBar from "../../NavBar/NavBar";
 import "./CardioTraining.css";
 import image from "../../../../Resources/Images/training4.jpg";
+import { useNavigate } from "react-router-dom";
 
 const CardioTraining = () => {
 	const classSchedule = [
@@ -31,6 +32,10 @@ const CardioTraining = () => {
 			time: "7:00 PM - 8:00 PM",
 		},
 	];
+	const navigate = useNavigate();
+	const navigationHandler = () => {
+		navigate("/membership");
+	};
 	return (
 		<div className="cardioTraining">
 			<header className="classHeader">
@@ -109,7 +114,7 @@ const CardioTraining = () => {
 							</div>
 						))}
 					</div>
-					<button>JOIN US</button>
+					<button onClick={navigationHandler}>JOIN US</button>
 				</div>
 			</section>
 			<Footer />

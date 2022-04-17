@@ -112,7 +112,7 @@ const Membership = () => {
 	const lastName = splittedName[1];
 
 	// Submit Handler
-	const clickHandlerNext = (event) => {
+	const clickHandler = (event) => {
 		// Get data from form & local storage
 		const userData = {
 			firstName: firstNameRef.current.value,
@@ -159,16 +159,16 @@ const Membership = () => {
 							<ProgressBar
 								id="progress"
 								variant="warning"
-								now={0}
+								now={50}
 							></ProgressBar>
 							<div className="d-flex justify-content-between">
 								<div className="circle1 active">1</div>
-								<div className="circle2 ">2</div>
+								<div className="circle2 active">2</div>
 								<div className="circle3 ">3</div>
 							</div>
 							<div className="d-flex justify-content-between textField">
-								<h6 className="firstText">Personal Details</h6>
-								<h6 className="secondText">Bank Payment</h6>
+								<h6 className="firstText">Bank Payment</h6>
+								<h6 className="secondText">Personal Details</h6>
 								<h6 className="thirdText">
 									Membership Created
 								</h6>
@@ -354,15 +354,11 @@ const Membership = () => {
 							</div>
 
 							<div className="buttons d-flex justify-content-between">
-								<Button className="button back" disabled>
-									Prev
-								</Button>
-
 								<Button
 									type="submit"
-									className="button next"
+									className="button"
 									disabled={!formValid}
-									onClick={clickHandlerNext}
+									onClick={clickHandler}
 								>
 									Next
 								</Button>

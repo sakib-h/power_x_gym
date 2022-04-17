@@ -3,6 +3,7 @@ import Footer from "../../../Shared/Footer/Footer";
 import NavBar from "../../NavBar/NavBar";
 import "./SelfDefence.css";
 import image from "../../../../Resources/Images/training2.jpg";
+import { useNavigate } from "react-router-dom";
 const SelfDefence = () => {
 	const classSchedule = [
 		{
@@ -30,6 +31,10 @@ const SelfDefence = () => {
 			time: "7:00 PM - 8:00 PM",
 		},
 	];
+	const navigate = useNavigate();
+	const navigationHandler = () => {
+		navigate("/membership");
+	};
 	return (
 		<div className="selfDefence">
 			<header className="classHeader">
@@ -108,7 +113,7 @@ const SelfDefence = () => {
 							</div>
 						))}
 					</div>
-					<button>JOIN US</button>
+					<button onClick={navigationHandler}>JOIN US</button>
 				</div>
 			</section>
 			<Footer />

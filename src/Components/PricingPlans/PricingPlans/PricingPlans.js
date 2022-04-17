@@ -19,22 +19,13 @@ const PricingPlans = () => {
 			cart.price = 140;
 			cart.quantity = 1;
 			setPrice(cart);
-			fetch(`http://localhost:5000/addToCart`, {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(cart),
-			})
-				.then((res) => res.json())
-				.then(({ url }) => {
-					window.location = url;
-				})
-				.catch((err) => console.log(err));
 			localStorage.setItem("cartInfo", JSON.stringify(cart));
 		}
 		if (event.target.id === "basic") {
 			const cart = { ...price };
 			cart.plan = "BASIC PLAN";
 			cart.price = 120;
+			cart.quantity = 1;
 			setPrice(cart);
 			localStorage.setItem("cartInfo", JSON.stringify(cart));
 		}
@@ -42,11 +33,12 @@ const PricingPlans = () => {
 			const cart = { ...price };
 			cart.plan = "BEGINNERS PLAN";
 			cart.price = 90;
+			cart.quantity = 1;
 			setPrice(cart);
 			localStorage.setItem("cartInfo", JSON.stringify(cart));
 		}
 
-		navigate("/membership");
+		navigate("/payment");
 	};
 
 	return (
