@@ -1,10 +1,9 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
-import { Button, Form, ProgressBar } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { ProgressBar } from "react-bootstrap";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../Header/Header";
 import "./Payment.css";
-
+import { Spinner } from "react-bootstrap";
 // stripe components
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
@@ -45,6 +44,15 @@ const Payment = () => {
 		clientSecret,
 		appearance,
 	};
+
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 2000);
+	}, []);
+
 	return (
 		<div className="payment">
 			<Header />
@@ -70,19 +78,38 @@ const Payment = () => {
 
 				{/* Stripe Form */}
 
-				<div className="paymentArea d-flex justify-content-between ">
-					<div className="cart col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-						<h1 className="cartTitle">Cart</h1>
-						<h5>Selected Plan: {cartInfo.plan}</h5>
-						<h2>Price: ${cartInfo.price}</h2>
-					</div>
-					<div className="stripePayment col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-						{clientSecret && (
-							<Elements options={options} stripe={stripePromise}>
-								<CheckoutForm />
-							</Elements>
-						)}
-					</div>
+				<div>
+					{loading ? (
+						<div class="loadingSpinner d-flex justify-content-center">
+							<Spinner
+								animation="border"
+								variant="warning"
+								role="status"
+							>
+								<span className="visually-hidden">
+									Loading...
+								</span>
+							</Spinner>
+						</div>
+					) : (
+						<div className="paymentArea d-flex justify-content-between ">
+							<div className="cart col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+								<h1 className="cartTitle">Cart</h1>
+								<h5>Selected Plan: {cartInfo.plan}</h5>
+								<h2>Price: ${cartInfo.price}</h2>
+							</div>
+							<div className="stripePayment col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+								{clientSecret && (
+									<Elements
+										options={options}
+										stripe={stripePromise}
+									>
+										<CheckoutForm />
+									</Elements>
+								)}
+							</div>
+						</div>
+					)}
 				</div>
 			</section>
 			<Footer />

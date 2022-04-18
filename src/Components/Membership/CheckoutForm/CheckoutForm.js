@@ -74,7 +74,7 @@ const CheckoutForm = () => {
 			setMessage(error.message);
 			console.log(error.message);
 		} else {
-			setMessage("An unexpected error occured.");
+			setMessage("An unexpected error occurred.");
 		}
 
 		setIsLoading(false);

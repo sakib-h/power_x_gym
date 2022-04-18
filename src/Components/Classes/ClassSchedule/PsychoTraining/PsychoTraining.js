@@ -33,7 +33,7 @@ const PsychoTraining = () => {
 	];
 	const navigate = useNavigate();
 	const navigationHandler = () => {
-		navigate("/membership");
+		navigate("/payment");
 	};
 
 	return (
