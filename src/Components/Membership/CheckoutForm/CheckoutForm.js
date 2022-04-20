@@ -6,12 +6,18 @@ import {
 	useStripe,
 	useElements,
 } from "@stripe/react-stripe-js";
+import { useAuth } from "../../UserAccess/Firebase/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const CheckoutForm = () => {
 	const stripe = useStripe();
 	const elements = useElements();
 	const [message, setMessage] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
+
+	const { currentUser } = useAuth();
+	const cartInfo = JSON.parse(localStorage.getItem("cartInfo"));
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		if (!stripe) {
@@ -30,6 +36,35 @@ const CheckoutForm = () => {
 			switch (paymentIntent.status) {
 				case "succeeded":
 					setMessage("Payment succeeded!");
+					alert("Payment succeeded");
+					const userInfo = {
+						email: currentUser.email,
+						isPaymentDone: true,
+						plan: cartInfo.plan,
+						created: new Date(),
+					};
+					const cart = {
+						plan: "",
+						price: "",
+						quantity: "",
+					};
+					fetch(`http://localhost:5000/createMembership`, {
+						method: "POST",
+						headers: { "Content-Type": "application/json" },
+						body: JSON.stringify(userInfo),
+					})
+						.then((res) => res.json())
+						.then((success) => {
+							if (success) {
+								localStorage.setItem(
+									"cartInfo",
+									JSON.stringify(cart)
+								);
+								navigate("/membership");
+							} else {
+								alert("Submission failed, please try again");
+							}
+						});
 					break;
 				case "processing":
 					setMessage("Your payment is processing.");
@@ -61,7 +96,7 @@ const CheckoutForm = () => {
 			elements,
 			confirmParams: {
 				// Make sure to change this to your payment completion page
-				return_url: "http://localhost:3000/membership",
+				return_url: "http://localhost:3000/payment",
 			},
 		});
 

@@ -6,7 +6,7 @@ import "./Responsive.css";
 const HeaderContent = () => {
 	const navigate = useNavigate();
 	const navigationHandler = () => {
-		navigate("/membership");
+		navigate("/pricing");
 	};
 	return (
 		<div className="headerContent">

@@ -8,6 +8,7 @@ import { Spinner } from "react-bootstrap";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
+import { Navigate } from "react-router-dom";
 
 const Payment = () => {
 	const stripePromise = loadStripe(
@@ -54,65 +55,73 @@ const Payment = () => {
 	}, []);
 
 	return (
-		<div className="payment">
-			<Header />
-			<section className="paymentSystem">
-				{/* Progress Bar */}
-				<div className="progressContainer">
-					<ProgressBar
-						id="progress"
-						variant="warning"
-						now={0}
-					></ProgressBar>
-					<div className="row justify-content-between">
-						<div className="circle1 active">1</div>
-						<div className="circle2 ">2</div>
-						<div className="circle3 ">3</div>
-					</div>
-					<div className="d-flex justify-content-between textField">
-						<h6 className="firstText">Bank Payment</h6>
-						<h6 className="secondText">Personal Details</h6>
-						<h6 className="thirdText">Membership Created</h6>
-					</div>
-				</div>
-
-				{/* Stripe Form */}
-
-				<div>
-					{loading ? (
-						<div class="loadingSpinner d-flex justify-content-center">
-							<Spinner
-								animation="border"
+		<div>
+			{cartInfo.plan === "" ? (
+				<Navigate to="/pricing" />
+			) : (
+				<div className="payment">
+					<Header />
+					<section className="paymentSystem">
+						{/* Progress Bar */}
+						<div className="progressContainer">
+							<ProgressBar
+								id="progress"
 								variant="warning"
-								role="status"
-							>
-								<span className="visually-hidden">
-									Loading...
-								</span>
-							</Spinner>
-						</div>
-					) : (
-						<div className="paymentArea d-flex justify-content-between ">
-							<div className="cart col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-								<h1 className="cartTitle">Cart</h1>
-								<h5>Selected Plan: {cartInfo.plan}</h5>
-								<h2>Price: ${cartInfo.price}</h2>
+								now={0}
+							></ProgressBar>
+							<div className="row justify-content-between">
+								<div className="circle1 active">1</div>
+								<div className="circle2 ">2</div>
+								<div className="circle3 ">3</div>
 							</div>
-							<div className="stripePayment col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-								{clientSecret && (
-									<Elements
-										options={options}
-										stripe={stripePromise}
+							<div className="d-flex justify-content-between textField">
+								<h6 className="firstText">Bank Payment</h6>
+								<h6 className="secondText">Personal Details</h6>
+								<h6 className="thirdText">
+									Membership Created
+								</h6>
+							</div>
+						</div>
+
+						{/* Stripe Form */}
+
+						<div>
+							{loading ? (
+								<div class="loadingSpinner d-flex justify-content-center">
+									<Spinner
+										animation="border"
+										variant="warning"
+										role="status"
 									>
-										<CheckoutForm />
-									</Elements>
-								)}
-							</div>
+										<span className="visually-hidden">
+											Loading...
+										</span>
+									</Spinner>
+								</div>
+							) : (
+								<div className="paymentArea d-flex justify-content-between ">
+									<div className="cart col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<h1 className="cartTitle">Cart</h1>
+										<h5>Selected Plan: {cartInfo.plan}</h5>
+										<h2>Price: ${cartInfo.price}</h2>
+									</div>
+									<div className="stripePayment col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+										{clientSecret && (
+											<Elements
+												options={options}
+												stripe={stripePromise}
+											>
+												<CheckoutForm />
+											</Elements>
+										)}
+									</div>
+								</div>
+							)}
 						</div>
-					)}
+					</section>
+					<Footer />
 				</div>
-			</section>
-			<Footer />
+			)}
 		</div>
 	);
 };

@@ -29,8 +29,7 @@ const Login = () => {
 
 	// --> Importing from context  <--
 	const { googleLogIn, facebookLogIn, login, currentUser } = useAuth();
-
-	console.log(currentUser);
+	
 	// --> Form ref defined <--
 	const emailRef = useRef();
 	const passwordRef = useRef();

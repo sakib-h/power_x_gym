@@ -34,7 +34,7 @@ const CardioTraining = () => {
 	];
 	const navigate = useNavigate();
 	const navigationHandler = () => {
-		navigate("/payment");
+		navigate("/pricing");
 	};
 	return (
 		<div className="cardioTraining">

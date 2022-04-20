@@ -18,7 +18,6 @@ const Signup = () => {
 
 	// --> Importing from context  <--
 	const { signup, currentUser } = useAuth();
-	console.log(currentUser);
 
 	// --> State Declaration <--
 	const [loading, setLoading] = useState(false);

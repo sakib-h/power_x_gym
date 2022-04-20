@@ -33,7 +33,7 @@ const SelfDefence = () => {
 	];
 	const navigate = useNavigate();
 	const navigationHandler = () => {
-		navigate("/payment");
+		navigate("/pricing");
 	};
 	return (
 		<div className="selfDefence">
