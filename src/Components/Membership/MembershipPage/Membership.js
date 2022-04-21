@@ -138,7 +138,13 @@ const Membership = () => {
 			body: JSON.stringify(userData),
 		})
 			.then((res) => res.json())
-			.then((data) => console.log(data));
+			.then((acknowledged) => {
+				if (acknowledged) {
+					navigate("/membership-created-successfully");
+				} else {
+					alert("Update failed try again letter");
+				}
+			});
 		event.preventDefault();
 	};
 	return (

@@ -22,6 +22,8 @@ import AboutUs from "./Components/AboutUs/AboutUs/AboutUs";
 import Blog from "./Components/Blog/Blog/Blog";
 import ContactUs from "./Components/ContactUs/ContactUs/ContactUs";
 import Payment from "./Components/Membership/Payment/Payment";
+import Successful from "./Components/Membership/Successful/Successful";
+import MembersProfile from "./Components/UserProfile/MembersProfile/MembersProfile";
 export const userContext = createContext();
 
 function App() {
@@ -60,6 +62,11 @@ function App() {
 						<Route path="membership" element={<Membership />} />
 						<Route path="payment" element={<Payment />} />
 					</Route>
+					<Route
+						path="membership-created-successfully"
+						element={<Successful />}
+					/>
+					<Route path="userProfile" element={<MembersProfile />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
 			</userContext.Provider>
