@@ -1,17 +1,27 @@
-.aboutUs .navigation {
+.blog .navigation {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 80px;
 }
-.aboutUs .navigation .logo {
+.blog .navigation .logo {
 	cursor: pointer;
 }
-
-.aboutUs .navigation button:hover {
+.blog .navigation button {
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.blog .navigation button:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.aboutUs .navigation a {
+.blog .navigation a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1rem;
@@ -21,20 +31,20 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-.aboutUs .navigation a:hover {
+.blog .navigation a:hover {
 	color: #171426;
 	background-color: #fcd842;
 }
-.aboutUs .navigation .active {
+.blog .navigation .active {
 	color: #171426;
 	background-color: #fcd842;
 }
 
-.aboutUs .navigation .navbar-toggler {
+.blog .navigation .navbar-toggler {
 	background-color: #ffffff;
 	border: none;
 	outline: none;
 }
-.aboutUs .navigation .navbar-toggler:focus {
+.blog .navigation .navbar-toggler:focus {
 	box-shadow: none;
 }

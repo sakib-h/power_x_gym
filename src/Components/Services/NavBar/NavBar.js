@@ -7,16 +7,14 @@ import "./NavBar.css";
 import "./Responsive.css";
 
 const NavBar = () => {
-	const { signOutUser, currentUser } = useAuth();
+	const { currentUser } = useAuth();
+	const splittedName = currentUser.displayName.split(" ");
+	const firstName = splittedName[0];
 	const navigate = useNavigate();
 	const navigationHandler = () => {
 		navigate("/home");
 	};
-	const signOutHandler = async () => {
-		try {
-			await signOutUser();
-		} catch (error) {}
-	};
+
 	return (
 		<div className="services">
 			<nav className="navigation">
@@ -56,12 +54,9 @@ const NavBar = () => {
 								Contact Us
 							</Link>
 							{currentUser ? (
-								<button
-									className="logOut"
-									onClick={signOutHandler}
-								>
-									Logout
-								</button>
+								<Link to="/userProfile " className="">
+									{firstName}
+								</Link>
 							) : (
 								<Link to="/login " className="">
 									Login

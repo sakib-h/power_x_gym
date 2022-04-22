@@ -140,7 +140,7 @@ const Membership = () => {
 			.then((res) => res.json())
 			.then((acknowledged) => {
 				if (acknowledged) {
-					navigate("/membership-created-successfully");
+					navigate("/membership-updated-successfully");
 				} else {
 					alert("Update failed try again letter");
 				}
