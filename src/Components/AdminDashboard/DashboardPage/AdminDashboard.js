@@ -94,6 +94,18 @@ const AdminDashboard = () => {
 							incidunt culpa vel!
 						</p>
 					</Tab>
+					<Tab eventKey="adminProfile" title="Admin Profile">
+						<h1>Admin Profile</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Animi, vitae? Magnam, nulla. Inventore magni
+							ratione hic nostrum dignissimos exercitationem
+							autem, saepe accusamus sequi cumque quo fugiat
+							voluptates. Tenetur totam cupiditate ratione,
+							tempora voluptatibus ex sed, aspernatur velit,
+							incidunt culpa vel!
+						</p>
+					</Tab>
 				</Tabs>
 			</section>
 			<Footer />
