@@ -41,7 +41,7 @@ const CheckoutForm = () => {
 						email: currentUser.email,
 						isPaymentDone: true,
 						plan: cartInfo.plan,
-						created: new Date(),
+						created: new Date().toDateString(),
 					};
 					const cart = {
 						plan: "",

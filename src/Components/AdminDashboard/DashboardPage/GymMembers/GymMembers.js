@@ -3,12 +3,14 @@ import { Table } from "react-bootstrap";
 import "./GymMembers.css";
 
 const GymMembers = () => {
-	const [members, setMembers] = useState();
+	const [members, setMembers] = useState([]);
 	useEffect(() => {
 		fetch(`http://localhost:5000/members`)
 			.then((res) => res.json())
 			.then((data) => setMembers(data));
 	}, []);
+
+	members.map((member) => console.log(member));
 
 	return (
 		<div>
@@ -16,32 +18,28 @@ const GymMembers = () => {
 				<Table responsive>
 					<thead>
 						<tr>
-							<th>#</th>
-							{Array.from({ length: 12 }).map((_, index) => (
-								<th key={index}>Table heading</th>
-							))}
+							<th>No</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+							<th>Plan</th>
+							<th>Number</th>
+							<th>Created On</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							{Array.from({ length: 12 }).map((_, index) => (
-								<td key={index}>Table cell {index}</td>
-							))}
-						</tr>
-						<tr>
-							<td>2</td>
-							{Array.from({ length: 12 }).map((_, index) => (
-								<td key={index}>Table cell {index}</td>
-							))}
-						</tr>
-						<tr>
-							<td>3</td>
-							{Array.from({ length: 12 }).map((_, index) => (
-								<td key={index}>Table cell {index}</td>
-							))}
-						</tr>
-					</tbody>
+					{members.map((member, index) => (
+						<tbody>
+							<tr>
+								<td>{index + 1}</td>
+								<td>{member.firstName}</td>
+								<td>{member.lastName}</td>
+								<td>{member.email}</td>
+								<td>{member.plan}</td>
+								<td>{member.number}</td>
+								<td>{member.created}</td>
+							</tr>
+						</tbody>
+					))}
 				</Table>
 			</div>
 		</div>
